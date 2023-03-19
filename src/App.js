@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import './App.css';
 
-const rowCount = 5, columnCount = 5;
+const rowCount = 3, columnCount = 3;
 
 const Square = ({ value, onSquareClick }) => {
   return (
@@ -34,7 +34,7 @@ const Board = ({ xIsNext, squares, onPlay }) => {
       row = [...row, i * columnCount + j];
     board = [...board, row];
   }
-  
+
   return (
     <div className='board'>
       <div className='status'>
